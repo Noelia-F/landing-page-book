@@ -1,95 +1,35 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import "./page.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="landpage">
+      <main className="main">
+        <div className="main__content">
+          <article className="main__content-box">
+            <h1 className="title">¿Te atreves?</h1>
+            <h2 className="subtitle">Tu mayor aventura está al pasar la siguiente página</h2>
+            <p className="text">Regístrate en nuestra página web y se el primero en conocer los mejores best-sellers internacionales.</p>
+            <button className="button">Hazte socio</button>
+          </article>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </main>
+      <section className="section">
+        <h3 className="title title--section">Ventajas por ser socio</h3>
+      </section>
+      <section className="section section--contrast">
+        <h3 className="title title--section">Lo que dicen de nosotros</h3>
+      </section>
+      <section className="section section--banner">
+        <h3 className="title title--banner">Empezar una nueva aventura nunca había sido tan fácil</h3>
+        <button className="button button--banner">Hazte socio</button>
+      </section>
+      <section className="section">
+        <h3 className="title title--section">Novedades literarias</h3>
+        <p className="text">Subscríbete a nuestra Newsletter y entérate de las últimas novedades literarias.</p>
+      </section>
+      <footer className="footer">
+        Footer
+      </footer>
+    </div>
   );
 }
